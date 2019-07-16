@@ -1,0 +1,91 @@
+$darkBlue: #000b29;
+$blue:#2d4574;
+$red:#d70026;
+$white:#f8f5f2;
+$yellow:#edb83d;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:$white;
+  color:$blue;
+  height: 100vh;
+  margin: 0;
+  font-family: futura-pt,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+
+h1, h2, h3 {
+  margin:0;
+  font-weight:inherit;
+}
+
+h1{
+  text-transform:uppercase;
+  font-size:8.4vw;
+  letter-spacing:7px;
+}
+h2{
+  text-transform:none;
+  font-size:3.5vw;
+}
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+
+.heading {
+  position:relative;
+  width:75vw;
+  margin: 0 auto;
+  text-align:center;
+}
+
+.donate {
+  width:60vw;
+  margin: 0 auto;
+  text-transform:uppercase;
+  text-align:center;
+  font-weight:800;
+  transition: all .25s cubic-bezier(.07,.73,.7,.98);
+      border:12px dashed;
+    padding:10px 40px;
+  &:hover {
+    color:$yellow;
+    border-color:$yellow;
+    transform:scale(1.15);
+
+  }
+  a{
+    font-size:3.5vw;
+  }
+}
+
+
+.social {
+  width:40vw;
+  margin: 0 auto;
+  text-align:center;
+  display:flex;
+  justify-content:space-around;
+
+    a {
+      padding: .2em;
+      font-size:3vw;
+      transition: all .25s cubic-bezier(.07,.73,.7,.98);
+    }
+    a:hover {
+      transform:scale(1.4);
+      color:$yellow;
+    }
+  
+}
+
+
