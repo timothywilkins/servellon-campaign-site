@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 body {
   background-color: #f8f5f2;
@@ -10,15 +9,9 @@ body {
   font-family: futura-pt,sans-serif;
   font-weight: 600;
   font-style: normal;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  flex-direction: column;
+  justify-content: space-around; }
 
 h1, h2, h3 {
   margin: 0;
@@ -26,12 +19,19 @@ h1, h2, h3 {
 
 h1 {
   text-transform: uppercase;
-  font-size: 8.4vw;
+  font-size: 5.5vw;
+  font-weight: 700;
   letter-spacing: 7px; }
+
+#a3b0dccf-85ba-479e-b96c-ea463b7e7cb2 {
+  padding-top: 1.2em; }
 
 h2 {
   text-transform: none;
-  font-size: 3.5vw; }
+  font-size: 6.2vw;
+  font-weight: 400;
+  padding-top: 1em;
+  font-family: 'Times New Roman', Times, serif; }
 
 a {
   color: inherit;
@@ -39,47 +39,48 @@ a {
 
 .heading {
   position: relative;
-  width: 75vw;
+  width: 75%;
+  max-width: 670px;
   margin: 0 auto;
   text-align: center; }
 
 .donate {
-  width: 60vw;
+  visibility: hidden;
+  max-width: 70%;
   margin: 0 auto;
   text-transform: uppercase;
   text-align: center;
   font-weight: 800;
-  -webkit-transition: all 0.25s cubic-bezier(0.07, 0.73, 0.7, 0.98);
-  -o-transition: all 0.25s cubic-bezier(0.07, 0.73, 0.7, 0.98);
   transition: all 0.25s cubic-bezier(0.07, 0.73, 0.7, 0.98);
-  border: 12px dashed;
-  padding: 10px 40px; }
+  border: 4px dashed;
+  padding: 10px; }
   .donate:hover {
     color: #edb83d;
     border-color: #edb83d;
-    -webkit-transform: scale(1.15);
-        -ms-transform: scale(1.15);
-            transform: scale(1.15); }
+    transform: scale(1.15); }
   .donate a {
-    font-size: 3.5vw; }
+    font-size: 5vw; }
 
 .social {
-  width: 40vw;
+  width: 65vw;
   margin: 0 auto;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  justify-content: space-around; }
   .social a {
     padding: .2em;
-    font-size: 3vw;
-    -webkit-transition: all 0.25s cubic-bezier(0.07, 0.73, 0.7, 0.98);
-    -o-transition: all 0.25s cubic-bezier(0.07, 0.73, 0.7, 0.98);
+    font-size: 7vw;
     transition: all 0.25s cubic-bezier(0.07, 0.73, 0.7, 0.98); }
   .social a:hover {
-    -webkit-transform: scale(1.4);
-        -ms-transform: scale(1.4);
-            transform: scale(1.4);
+    transform: scale(1.4);
     color: #edb83d; }
+
+@media only screen and (min-width: 670px) {
+  h1 {
+    font-size: 36.85px; }
+  h2 {
+    font-size: 41.54px; }
+  .donate a {
+    font-size: 50px; }
+  .social a {
+    font-size: 46.9px; } }

@@ -28,12 +28,20 @@ h1, h2, h3 {
 
 h1{
   text-transform:uppercase;
-  font-size:8.4vw;
+  font-size: 5.5vw;
+  font-weight:700;
   letter-spacing:7px;
+}
+
+#a3b0dccf-85ba-479e-b96c-ea463b7e7cb2 {
+  padding-top: 1.2em;
 }
 h2{
   text-transform:none;
-  font-size:3.5vw;
+  font-size: 6.2vw;
+  font-weight:400;
+    padding-top: 1em;
+    font-family: 'Times New Roman', Times, serif;
 }
 a {
   color:inherit;
@@ -43,34 +51,35 @@ a {
 
 .heading {
   position:relative;
-  width:75vw;
+  width:75%;
+  max-width:670px;
   margin: 0 auto;
   text-align:center;
 }
 
 .donate {
-  width:60vw;
+  visibility: hidden;
+  max-width:70%;
   margin: 0 auto;
   text-transform:uppercase;
   text-align:center;
   font-weight:800;
   transition: all .25s cubic-bezier(.07,.73,.7,.98);
-      border:12px dashed;
-    padding:10px 40px;
+      border:4px dashed;
+    padding:10px;
   &:hover {
     color:$yellow;
     border-color:$yellow;
     transform:scale(1.15);
-
   }
   a{
-    font-size:3.5vw;
+    font-size:5vw;
   }
 }
 
 
 .social {
-  width:40vw;
+ width:65vw;
   margin: 0 auto;
   text-align:center;
   display:flex;
@@ -78,7 +87,7 @@ a {
 
     a {
       padding: .2em;
-      font-size:3vw;
+      font-size:7vw;
       transition: all .25s cubic-bezier(.07,.73,.7,.98);
     }
     a:hover {
@@ -89,3 +98,21 @@ a {
 }
 
 
+@media only screen and (min-width: 670px) {
+ h1{
+  font-size:36.85px;
+ }
+ h2 {
+  font-size: 41.54px;
+ }
+ .donate {
+   a {
+     font-size:50px;
+   }
+ }
+ .social {
+   a {
+     font-size:46.9px;
+   }
+ }
+}
